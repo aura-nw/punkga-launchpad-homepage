@@ -1,0 +1,1743 @@
+@font-face {
+  font-family: PixelOperator-Regular;
+  src: url("./assets/PixelOperator-font/PixelOperator.ttf") format("truetype");
+}
+@font-face {
+  font-family: PixelOperator-Bold;
+  font-weight: bold;
+  src: url("./assets/PixelOperator-font/PixelOperator-Bold.ttf")
+    format("truetype");
+}
+html {
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 400px) {
+  .page {
+    display: none;
+  }
+  .mobile {
+    width: 100vw;
+    height: 100vh;
+    color: #06ab4d;
+    font-size: 20px;
+    font-family: PixelOperator-Bold;
+    text-transform: uppercase;
+    background: #071a36;
+    display: flex !important;
+    justify-content: center;
+    padding-top: 50px;
+  }
+}
+.mobile {
+  display: none;
+}
+
+a,
+button,
+input,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  appearance: none;
+  background: none;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  box-sizing: border-box;
+}
+.page {
+  background: #071a36;
+  height: 3619px;
+  position: relative;
+  min-width: 1440px;
+  /* overflow: hidden; */
+}
+.bg {
+  opacity: 0.5;
+  position: absolute;
+  right: -11px;
+  left: calc(50% - 720px);
+  bottom: 0px;
+  top: 0px;
+  mix-blend-mode: color-burn;
+  object-fit: cover;
+  width: 1440px;
+}
+.frame-10 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1440px;
+  position: absolute;
+  left: calc(50% - 720px);
+  top: 102px;
+}
+.frame {
+  padding: 120px 80px 120px 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 640px;
+  position: relative;
+}
+.frame-8 {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 519px;
+  position: relative;
+}
+.frame-37 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.protect-and-monetize-your-nf-ts-with-ip-asset {
+  color: var(--punkgame-primary-300, #aef7ce);
+  text-align: left;
+  font-family: var(
+    --desktop-heading-semibold-01-font-family,
+    "PixelOperator-Bold",
+    sans-serif
+  );
+  font-size: var(--desktop-heading-semibold-01-font-size, 64px);
+  line-height: var(--desktop-heading-semibold-01-line-height, 90%);
+  letter-spacing: var(--desktop-heading-semibold-01-letter-spacing, -0.02em);
+  font-weight: var(--desktop-heading-semibold-01-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+}
+.easily-transform-your-nf-ts-into-secure-and-valuable-ip-assets-with-registered-copyrights-create-and-transfer-licenses-effortlessly-and-unlock-new-revenue-streams-through-our-nft-launchpad {
+  color: var(--punkgame-primary-0, #ffffff);
+  text-align: left;
+  font-family: var(
+    --desktop-body-regular-01-font-family,
+    "PixelOperator-Regular",
+    sans-serif
+  );
+  font-size: var(--desktop-body-regular-01-font-size, 20px);
+  line-height: var(--desktop-body-regular-01-line-height, 110%);
+  letter-spacing: var(--desktop-body-regular-01-letter-spacing, -0.01em);
+  font-weight: var(--desktop-body-regular-01-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.button {
+  border-style: solid;
+  border-color: var(--punkgame-primary-300, #aef7ce);
+  border-width: 1px;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+.frame2 {
+  background: var(--punkgame-primary-punkgame-primary-color, #23ff81);
+  padding: 11px 24px 11px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.swap {
+  color: var(--punkgame-sub-color-black, #000000);
+  text-align: center;
+  font-family: var(
+    --desktop-overline-01-font-family,
+    "PixelOperator-Bold",
+    sans-serif
+  );
+  font-size: var(--desktop-overline-01-font-size, 20px);
+  line-height: var(--desktop-overline-01-line-height, 100%);
+  letter-spacing: var(--desktop-overline-01-letter-spacing, 0.02em);
+  font-weight: var(--desktop-overline-01-font-weight, 700);
+  text-transform: uppercase;
+  position: relative;
+}
+.arrow-down {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.frame-9 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 658px;
+  position: relative;
+}
+.frame-31 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 189.11px;
+  position: absolute;
+  left: 739.28px;
+  top: 276.89px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(-1, 1);
+  overflow: hidden;
+}
+.background {
+  flex-shrink: 0;
+  width: 418.14px;
+  height: 189.11px;
+  position: relative;
+  overflow: hidden;
+}
+.group {
+  opacity: 0.699999988079071;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.group2 {
+  opacity: 0.699999988079071;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.frame3 {
+  background: var(--punkgame-primary-punkgame-primary-color, #23ff81);
+  padding: 3.15px;
+  flex-shrink: 0;
+  width: 580.99px;
+  height: 285.77px;
+  position: absolute;
+  left: 10.19px;
+  top: 12.14px;
+}
+.outline {
+  position: absolute;
+  right: -2.12px;
+  left: -2.1012144088745117px;
+  bottom: -2.34px;
+  top: -2.1012144088745117px;
+}
+._1 {
+  background: var(--punkgame-primary-punkgame-primary-color, #23ff81);
+  height: 2.1px;
+  position: absolute;
+  right: 4.22px;
+  left: 4.202532768249512px;
+  top: 0px;
+}
+._12 {
+  background: var(--punkgame-primary-punkgame-primary-color, #23ff81);
+  height: 2.1px;
+  position: absolute;
+  right: 4.22px;
+  left: 4.202532768249512px;
+  bottom: 0.23px;
+}
+._13 {
+  background: var(--punkgame-primary-punkgame-primary-color, #23ff81);
+  width: 2.1px;
+  position: absolute;
+  right: 0.01px;
+  bottom: 4.44px;
+  top: 4.202532768249512px;
+}
+._14 {
+  background: var(--punkgame-primary-punkgame-primary-color, #23ff81);
+  width: 2.1px;
+  position: absolute;
+  left: 0px;
+  bottom: 4.44px;
+  top: 4.202532768249512px;
+}
+._15 {
+  background: var(--punkgame-primary-punkgame-primary-color, #23ff81);
+  width: 2.1px;
+  height: 2.1px;
+  position: absolute;
+  left: 2.1px;
+  top: 2.1px;
+}
+._16 {
+  background: var(--punkgame-primary-punkgame-primary-color, #23ff81);
+  width: 2.1px;
+  height: 2.1px;
+  position: absolute;
+  right: 2.12px;
+  top: 2.1px;
+}
+._17 {
+  background: var(--punkgame-primary-punkgame-primary-color, #23ff81);
+  width: 2.1px;
+  height: 2.1px;
+  position: absolute;
+  left: 2.1px;
+  bottom: 2.34px;
+}
+._18 {
+  background: var(--punkgame-primary-punkgame-primary-color, #23ff81);
+  width: 2.1px;
+  height: 2.1px;
+  position: absolute;
+  right: 2.12px;
+  bottom: 2.34px;
+}
+.sun {
+  flex-shrink: 0;
+  width: 84.05px;
+  height: 84.05px;
+  position: absolute;
+  left: 396.81px;
+  top: -53px;
+  overflow: visible;
+}
+.frame4 {
+  padding: 3.15px;
+  flex-shrink: 0;
+  width: 585px;
+  height: 286px;
+  position: relative;
+}
+.outline2 {
+  position: absolute;
+  right: -2.1px;
+  left: -2.1012144088745117px;
+  bottom: -2.1px;
+  top: -2.1012144088745117px;
+}
+._19 {
+  background: var(--punkgame-primary-0, #ffffff);
+  height: 2.1px;
+  position: absolute;
+  right: 4.01px;
+  left: 4.202532768249512px;
+  top: 0px;
+}
+._110 {
+  background: var(--punkgame-primary-0, #ffffff);
+  height: 2.1px;
+  position: absolute;
+  right: 4.01px;
+  left: 4.202532768249512px;
+  bottom: 0.23px;
+}
+._111 {
+  background: var(--punkgame-primary-0, #ffffff);
+  width: 2.1px;
+  position: absolute;
+  right: -0.19px;
+  bottom: 4.44px;
+  top: 4.202532768249512px;
+}
+._112 {
+  background: var(--punkgame-primary-0, #ffffff);
+  width: 2.1px;
+  position: absolute;
+  left: 0px;
+  bottom: 4.44px;
+  top: 4.202532768249512px;
+}
+._113 {
+  background: var(--punkgame-primary-0, #ffffff);
+  width: 2.1px;
+  height: 2.1px;
+  position: absolute;
+  left: 2.1px;
+  top: 2.1px;
+}
+._114 {
+  background: var(--punkgame-primary-0, #ffffff);
+  width: 2.1px;
+  height: 2.1px;
+  position: absolute;
+  right: 1.91px;
+  top: 2.1px;
+}
+._115 {
+  background: var(--punkgame-primary-0, #ffffff);
+  width: 2.1px;
+  height: 2.1px;
+  position: absolute;
+  left: 2.1px;
+  bottom: 2.34px;
+}
+._116 {
+  background: var(--punkgame-primary-0, #ffffff);
+  width: 2.1px;
+  height: 2.1px;
+  position: absolute;
+  right: 1.91px;
+  bottom: 2.34px;
+}
+.cloud-01 {
+  flex-shrink: 0;
+  width: 168.1px;
+  height: 54.63px;
+  position: absolute;
+  left: 78.48px;
+  top: 263.23px;
+  overflow: visible;
+}
+.cloud-4 {
+  flex-shrink: 0;
+  width: 168.1px;
+  height: 54.63px;
+  position: absolute;
+  left: 468.25px;
+  top: -27.79px;
+  overflow: visible;
+}
+.cloud-06 {
+  flex-shrink: 0;
+  width: 273.16px;
+  height: 79.85px;
+  position: absolute;
+  right: -74.25px;
+  bottom: -55.5px;
+  overflow: visible;
+}
+.frame-6 {
+  padding: 120px 80px 120px 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-22 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 302px;
+  position: relative;
+}
+.bookmarks {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+.how-it-works {
+  color: var(--punkgame-primary-300, #aef7ce);
+  text-align: left;
+  font-family: var(
+    --desktop-heading-semibold-03-font-family,
+    "PixelOperator-Bold",
+    sans-serif
+  );
+  font-size: var(--desktop-heading-semibold-03-font-size, 40px);
+  line-height: var(--desktop-heading-semibold-03-line-height, 90%);
+  letter-spacing: var(--desktop-heading-semibold-03-letter-spacing, -0.02em);
+  font-weight: var(--desktop-heading-semibold-03-font-weight, 700);
+  text-transform: uppercase;
+  position: relative;
+  flex: 1;
+}
+.frame-5 {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.frame-4 {
+  background: #07152d;
+  border-style: solid;
+  border-color: var(--punkgame-primary-800, #06ab4d);
+  border-width: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+  box-shadow: 4px 4px 0px 0px rgba(35, 255, 129, 1),
+    inset 0px 4px 0px 0px rgba(253, 255, 255, 1);
+}
+.frame5 {
+  background: #07152d;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  height: 230px;
+}
+.frame-40 {
+  flex-shrink: 0;
+  width: 320px;
+  height: 230px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.background2 {
+  height: 144.42px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: -86px;
+  overflow: hidden;
+}
+.group3 {
+  opacity: 0.699999988079071;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.background3 {
+  height: 144.42px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: -118.84px;
+  overflow: hidden;
+}
+.group4 {
+  opacity: 0.699999988079071;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.copyright {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: calc(50% - 40px);
+  top: calc(50% - 40px);
+  overflow: visible;
+}
+.frame-11 {
+  background: #07152d;
+  border-style: solid;
+  border-color: var(--punkgame-primary-800, #06ab4d);
+  border-width: 2px 0px 0px 0px;
+  padding: 32px 24px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.bullet {
+  flex-shrink: 0;
+  width: 27px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.register-your-nft-s-copyright-with-a-few-simple-steps {
+  color: var(--punkgame-primary-0, #ffffff);
+  text-align: left;
+  font-family: var(
+    --desktop-heading-semibold-06-font-family,
+    "PixelOperator-Bold",
+    sans-serif
+  );
+  font-size: var(--desktop-heading-semibold-06-font-size, 24px);
+  line-height: var(--desktop-heading-semibold-06-line-height, 100%);
+  letter-spacing: var(--desktop-heading-semibold-06-letter-spacing, -0.02em);
+  font-weight: var(--desktop-heading-semibold-06-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+  min-height: 72px;
+}
+.frame-2 {
+  background: #07152d;
+  border-style: solid;
+  border-color: var(--punkgame-primary-800, #06ab4d);
+  border-width: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+  box-shadow: 4px 4px 0px 0px rgba(35, 255, 129, 1),
+    inset 0px 4px 0px 0px rgba(253, 255, 255, 1);
+}
+.frame-112 {
+  background: #07152d;
+  border-style: solid;
+  border-color: var(--punkgame-primary-800, #06ab4d);
+  border-width: 0px 0px 2px 0px;
+  padding: 32px 24px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.bullet2 {
+  flex-shrink: 0;
+  width: 27px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.frame6 {
+  background: #07152d;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame7 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+}
+.group5 {
+  opacity: 0.699999988079071;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.background4 {
+  height: 144.42px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: -114.42px;
+  overflow: hidden;
+}
+.group6 {
+  opacity: 0.699999988079071;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.script-text {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: calc(50% - 40px);
+  top: calc(50% - 40px);
+  overflow: visible;
+}
+.frame-3 {
+  background: #07152d;
+  border-style: solid;
+  border-color: var(--punkgame-primary-800, #06ab4d);
+  border-width: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+  box-shadow: 4px 4px 0px 0px rgba(35, 255, 129, 1),
+    inset 0px 4px 0px 0px rgba(253, 255, 255, 1);
+}
+.group7 {
+  opacity: 0.699999988079071;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.group8 {
+  opacity: 0.699999988079071;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.chart-multiple {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: calc(50% - 40px);
+  top: calc(50% - 40px);
+  overflow: visible;
+}
+.bullet3 {
+  flex-shrink: 0;
+  width: 27px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.frame-27 {
+  background: var(--punkgame-primary-punkgame-primary-color, #23ff81);
+  padding: 24px 80px 24px 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.frame-222 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 1;
+  position: relative;
+  /* animation: ani 4s linear infinite; */
+}
+
+@keyframes ani {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 60px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.punkga-me {
+  color: var(--punkgame-sub-color-black, #000000);
+  text-align: left;
+  font-family: var(
+    --desktop-overline-01-font-family,
+    "PixelOperator-Bold",
+    sans-serif
+  );
+  font-size: var(--desktop-overline-01-font-size, 20px);
+  line-height: var(--desktop-overline-01-line-height, 100%);
+  letter-spacing: var(--desktop-overline-01-letter-spacing, 0.02em);
+  font-weight: var(--desktop-overline-01-font-weight, 700);
+  text-transform: uppercase;
+  position: relative;
+}
+.frame-312 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1440px;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+}
+.background5 {
+  flex-shrink: 0;
+  width: 398px;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+}
+.group9 {
+  opacity: 0.699999988079071;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.group10 {
+  opacity: 0.699999988079071;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.group11 {
+  opacity: 0.699999988079071;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.group12 {
+  opacity: 0.699999988079071;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.frame-7 {
+  padding: 120px 80px 120px 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-23 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 302px;
+  position: relative;
+}
+.human-handsup {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+.our-team {
+  color: var(--punkgame-primary-300, #aef7ce);
+  text-align: left;
+  font-family: var(
+    --desktop-heading-semibold-03-font-family,
+    "PixelOperator-Bold",
+    sans-serif
+  );
+  font-size: var(--desktop-heading-semibold-03-font-size, 40px);
+  line-height: var(--desktop-heading-semibold-03-line-height, 90%);
+  letter-spacing: var(--desktop-heading-semibold-03-letter-spacing, -0.02em);
+  font-weight: var(--desktop-heading-semibold-03-font-weight, 700);
+  text-transform: uppercase;
+  position: relative;
+  flex: 1;
+}
+.frame-52 {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex: 1;
+  position: relative;
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+}
+.frame8 {
+  background: #07152d;
+  border-style: solid;
+  border-color: var(--punkgame-primary-800, #06ab4d);
+  border-width: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 214px;
+  position: relative;
+  box-shadow: 4px 4px 0px 0px rgba(35, 255, 129, 1),
+    inset 0px 4px 0px 0px rgba(253, 255, 255, 1);
+}
+.frame9 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.rectangle {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  object-fit: cover;
+}
+.frame-13 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-35 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.name {
+  color: var(--punkgame-primary-300, #aef7ce);
+  text-align: left;
+  font-family: var(
+    --desktop-heading-semibold-06-font-family,
+    "PixelOperator-Bold",
+    sans-serif
+  );
+  font-size: var(--desktop-heading-semibold-06-font-size, 24px);
+  line-height: var(--desktop-heading-semibold-06-line-height, 100%);
+  letter-spacing: var(--desktop-heading-semibold-06-letter-spacing, -0.02em);
+  font-weight: var(--desktop-heading-semibold-06-font-weight, 700);
+  position: relative;
+  flex: 1;
+}
+.frame-34 {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.heart {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart2 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart3 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.title-here {
+  color: var(--punkgame-primary-0, #ffffff);
+  text-align: left;
+  font-family: var(
+    --desktop-body-regular-01-font-family,
+    "PixelOperator-Regular",
+    sans-serif
+  );
+  font-size: var(--desktop-body-regular-01-font-size, 20px);
+  line-height: var(--desktop-body-regular-01-line-height, 110%);
+  letter-spacing: var(--desktop-body-regular-01-letter-spacing, -0.01em);
+  font-weight: var(--desktop-body-regular-01-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.heart4 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart5 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart6 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart7 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart8 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart9 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart10 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart11 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart12 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart13 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart14 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart15 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart16 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart17 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart18 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart19 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart20 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart21 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart22 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart23 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.heart24 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.frame-92 {
+  padding: 120px 80px 120px 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-24 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 302px;
+  position: relative;
+}
+.battery-charging {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+.our-partners {
+  color: var(--punkgame-primary-300, #aef7ce);
+  text-align: left;
+  font-family: var(
+    --desktop-heading-semibold-03-font-family,
+    "PixelOperator-Bold",
+    sans-serif
+  );
+  font-size: var(--desktop-heading-semibold-03-font-size, 40px);
+  line-height: var(--desktop-heading-semibold-03-line-height, 90%);
+  letter-spacing: var(--desktop-heading-semibold-03-letter-spacing, -0.02em);
+  font-weight: var(--desktop-heading-semibold-03-font-weight, 700);
+  text-transform: uppercase;
+  position: relative;
+  flex: 1;
+}
+.frame-53 {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.frame-32 {
+  background: rgba(35, 255, 129, 0.05);
+  border-style: solid;
+  border-color: var(--punkgame-primary-300, #aef7ce);
+  border-width: 1px;
+  padding: 32px 40px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 280px;
+  min-height: 150px;
+  position: relative;
+  box-shadow: var(--blur-1-box-shadow, 0px 1px 9px 0px rgba(35, 255, 129, 0.5));
+}
+.moby-white-1 {
+  flex-shrink: 0;
+  width: 112.55px;
+  height: 56px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-33 {
+  background: rgba(35, 255, 129, 0.05);
+  border-style: solid;
+  border-color: var(--punkgame-primary-300, #aef7ce);
+  border-width: 1px;
+  padding: 32px 40px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 280px;
+  min-height: 150px;
+  position: relative;
+  box-shadow: var(--blur-1-box-shadow, 0px 1px 9px 0px rgba(35, 255, 129, 0.5));
+}
+.story-protocol-logo {
+  flex-shrink: 0;
+  width: 175px;
+  height: 40px;
+  position: relative;
+}
+.group13 {
+  width: 17.33%;
+  height: 100.33%;
+  position: absolute;
+  right: 82.67%;
+  left: 0%;
+  bottom: 0%;
+  top: -0.33%;
+  overflow: visible;
+}
+.group14 {
+  width: 18.58%;
+  height: 95.87%;
+  position: absolute;
+  right: 63.12%;
+  left: 18.3%;
+  bottom: 1.85%;
+  top: 2.28%;
+  overflow: visible;
+}
+.group15 {
+  width: 22.44%;
+  height: 100%;
+  position: absolute;
+  right: 40.7%;
+  left: 36.86%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.group16 {
+  width: 19.83%;
+  height: 95.43%;
+  position: absolute;
+  right: 19.9%;
+  left: 60.27%;
+  bottom: 2.17%;
+  top: 2.39%;
+  overflow: visible;
+}
+.group17 {
+  width: 20.7%;
+  height: 95.43%;
+  position: absolute;
+  right: 0%;
+  left: 79.3%;
+  bottom: 2.17%;
+  top: 2.39%;
+  overflow: visible;
+}
+.frame-26 {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-82 {
+  background: rgba(0, 255, 255, 0.05);
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  height: 54px;
+  position: relative;
+}
+.punkga-logo {
+  flex-shrink: 0;
+  width: 111.24px;
+  height: 64px;
+  position: relative;
+  overflow: hidden;
+}
+.group18 {
+  width: 100.01%;
+  height: 100.01%;
+  position: absolute;
+  right: -0.01%;
+  left: 0%;
+  bottom: -0.01%;
+  top: 0%;
+  overflow: visible;
+}
+.frame-14 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-15 {
+  background: var(--punkgame-primary-400, #74efa9);
+  border-style: solid;
+  border-color: #a3a3a3;
+  border-width: 0.75px;
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: inset 3px 3px 0px 0px rgba(234, 255, 232, 1),
+    inset -3px -3px 0px 0px rgba(31, 171, 94, 1);
+}
+.ic-x {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.frame-16 {
+  background: var(--punkgame-primary-400, #74efa9);
+  border-style: solid;
+  border-color: #a3a3a3;
+  border-width: 0.75px;
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: inset 3px 3px 0px 0px rgba(234, 255, 232, 1),
+    inset -3px -3px 0px 0px rgba(31, 171, 94, 1);
+}
+.ic-facebook-fill {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.frame-17 {
+  background: var(--punkgame-primary-400, #74efa9);
+  border-style: solid;
+  border-color: #a3a3a3;
+  border-width: 0.75px;
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: inset 3px 3px 0px 0px rgba(234, 255, 232, 1),
+    inset -3px -3px 0px 0px rgba(31, 171, 94, 1);
+}
+.ic-discord {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.frame-322 {
+  padding: 120px 0px 80px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1440px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-36 {
+  opacity: 0.30000001192092896;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+  position: absolute;
+  right: -33px;
+  left: -33px;
+  top: 0px;
+}
+.background6 {
+  flex-shrink: 0;
+  width: 555px;
+  height: 251px;
+  position: relative;
+  overflow: visible;
+}
+.background7 {
+  flex-shrink: 0;
+  width: 556px;
+  height: 251px;
+  position: relative;
+  overflow: visible;
+}
+.background8 {
+  flex-shrink: 0;
+  width: 555px;
+  height: 251px;
+  position: relative;
+  overflow: visible;
+}
+.frame-12 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+._2024-punkga-me {
+  color: var(--punkgame-primary-300, #aef7ce);
+  text-align: center;
+  font-family: var(
+    --desktop-body-medium-02-font-family,
+    "PixelOperator-Bold",
+    sans-serif
+  );
+  font-size: var(--desktop-body-medium-02-font-size, 16px);
+  line-height: var(--desktop-body-medium-02-line-height, 110%);
+  letter-spacing: var(--desktop-body-medium-02-letter-spacing, -0.01em);
+  font-weight: var(--desktop-body-medium-02-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+}
+.all-rights-reserved {
+  color: var(--punkgame-primary-300, #aef7ce);
+  text-align: center;
+  font-family: var(
+    --desktop-body-medium-02-font-family,
+    "PixelOperator-Bold",
+    sans-serif
+  );
+  font-size: var(--desktop-body-medium-02-font-size, 16px);
+  line-height: var(--desktop-body-medium-02-line-height, 110%);
+  letter-spacing: var(--desktop-body-medium-02-letter-spacing, -0.01em);
+  font-weight: var(--desktop-body-medium-02-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+}
+.navbar {
+  padding: 24px 80px 24px 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1440px;
+  position: sticky;
+  left: calc(50% - 720px);
+  top: 0px;
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+}
+@media only screen and (max-width: 1400px) {
+  .navbar {
+    left: 0;
+
+  }
+}
+.logo2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 320px;
+  height: 54px;
+  position: relative;
+}
+.punkga-logo2 {
+  flex-shrink: 0;
+  width: 73px;
+  height: 42px;
+  position: relative;
+  overflow: hidden;
+}
+.group19 {
+  width: 100.01%;
+  height: 100.01%;
+  position: absolute;
+  right: -0.01%;
+  left: 0%;
+  bottom: -0.01%;
+  top: 0%;
+  overflow: visible;
+}
+.item-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.about {
+  color: var(--punkgame-sub-color-white, #ffffff);
+  text-align: left;
+  font-family: var(
+    --desktop-body-medium-01-font-family,
+    "PixelOperator-Bold",
+    sans-serif
+  );
+  font-size: var(--desktop-body-medium-01-font-size, 20px);
+  line-height: var(--desktop-body-medium-01-line-height, 110%);
+  letter-spacing: var(--desktop-body-medium-01-letter-spacing, -0.01em);
+  font-weight: var(--desktop-body-medium-01-font-weight, 700);
+  position: relative;
+}
+.how-it-works2 {
+  color: var(--punkgame-sub-color-white, #ffffff);
+  text-align: left;
+  font-family: var(
+    --desktop-body-medium-01-font-family,
+    "PixelOperator-Bold",
+    sans-serif
+  );
+  font-size: var(--desktop-body-medium-01-font-size, 20px);
+  line-height: var(--desktop-body-medium-01-line-height, 110%);
+  letter-spacing: var(--desktop-body-medium-01-letter-spacing, -0.01em);
+  font-weight: var(--desktop-body-medium-01-font-weight, 700);
+  position: relative;
+}
+.our-team2 {
+  color: var(--punkgame-sub-color-white, #ffffff);
+  text-align: left;
+  font-family: var(
+    --desktop-body-medium-01-font-family,
+    "PixelOperator-Bold",
+    sans-serif
+  );
+  font-size: var(--desktop-body-medium-01-font-size, 20px);
+  line-height: var(--desktop-body-medium-01-line-height, 110%);
+  letter-spacing: var(--desktop-body-medium-01-letter-spacing, -0.01em);
+  font-weight: var(--desktop-body-medium-01-font-weight, 700);
+  position: relative;
+}
+.frame-172 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  width: 320px;
+  position: relative;
+}
+.frame-20 {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-18 {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.ic-x2 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.frame-202 {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.ic-facebook-fill2 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.frame-19 {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.ic-discord2 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
